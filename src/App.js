@@ -1,11 +1,13 @@
 import './App.css';
 import Banner from './components/Banner';
+import Nav from './components/Nav';
 import Row from './components/Row';
 import requests from './requests';
 
 function App() {
   return (
     <div>
+      <Nav/>
       <Banner fetchUrl={requests.fetchNetflixOriginals}/>
     <Row isPoster={true} title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals}  />
     <Row title="Trending in India" fetchUrl={requests.fetchTrending}  />
